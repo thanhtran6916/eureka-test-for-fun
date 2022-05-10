@@ -5,17 +5,18 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.3.5.RELEASE</version>
+        <relativePath/>
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>eureka-server</artifactId>
+    <groupId>com.mcredit.bpm</groupId>
+    <artifactId>composite-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-server</name>
-    <description>eureka-server</description>
+    <name>composite-service</name>
+    <description>Composite service project for BPM</description>
+    <packaging>jar</packaging>
+
     <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.RC1</spring-cloud.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -38,7 +39,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>Hoxton.SR9</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
